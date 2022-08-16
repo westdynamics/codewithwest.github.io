@@ -1,0 +1,121 @@
+
+  body {
+    background: var(--bg);
+    color: var(--fontColor);
+   
+  }
+ul {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-weight: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    padding-left: 30px;
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .active {
+    background-color: #8308c5;
+  }
+
+  
+  .light-theme {
+    color: #000000;
+    background: #FFFFFF;
+  }
+  :root {
+    --green: #FFFFFF;
+    --white: #ffffff;
+    --black: #19012de8;
+  }
+
+  .btn {
+    height: 45px;
+    width: 50px;
+    border: none;
+    color: var(--btnFontColor);
+    text-emphasis-position:center;
+    background-color: var(--btnBg);
+    font-size: 10pt;
+  }
+  .light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+  .dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+  .West_Tech_division{
+    padding-left: 35%;
+  }
+  
+  .West_Tech_division button {
+    font-size: medium;
+    align-items: center;
+    background-color: #7a3b9c;
+    text-align: center;
+    width: 180px;
+    height: 80px;
+    border-radius: 35%;
+    background-color: transparent;
+    opacity: 0.7;
+    box-shadow: 5px 10px 0 0 blue;
+    background:  linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  }
+  .West_Tech_division button:hover{
+    background-color: #333;
+  }
+
+  
+
+#content{
+    padding-left: 10px;
+    padding-right: 20px;
+    overflow-y: auto;
+
+}
+#footer {
+  padding: 20px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.w3-center {
+  align-items: center;
+  text-align: center;
+  margin-left:90px;
+  margin-right: 90px;
+  margin-top: 30px;
+  
+}
+
+.copyright {
+  font-size: 8pt;
+  text-align: right;
+  padding-top: 1px;
+  color: grey;
+  float: right;
+
+}
