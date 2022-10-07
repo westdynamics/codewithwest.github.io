@@ -1,1 +1,290 @@
-<h1>Waddup party people</h1>
+<style>
+
+    .page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: #23242a;
+    }
+    .body{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: #1c1c1c;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .body::before
+    {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 97%;
+        height: 100vh;
+        background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+        transform-origin:bottom right;
+        animation: animate 6s linear infinite;
+
+    }
+    .body::after
+    {
+        content:'';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 97%;
+        height: 97%;
+        background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+        transform-origin:  bottom right;
+        animation: animate 4s linear infinite ;
+        animation-delay: -2s;
+
+    }
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+.resume{
+    position: absolute;
+    inset: 2px;
+    background: #28292d;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+.mycards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        opacity: 0.7;
+        background: linear-gradient(15deg, transparent,#adf22b ,#26242b);
+}
+
+.mycards::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(30% at right 70%);
+    opacity: 0.4;
+    background: linear-gradient(#f20 , #f0f);
+}
+.mycards::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    clip-path: circle(20% at 10% 10%);
+    background: linear-gradient(#adb , #afdd2b);
+}
+
+.mycards .cardwrap{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+ .mycards .cardwrap .card{
+    display: inline-block;
+    padding-left: 20px;
+    position: relative;    
+    margin: 10;
+
+}
+.card3{
+    position: relative;
+        margin: 20; 
+        width: 270px;
+        
+        min-height: 60vh;
+        background: #1c1c1c;
+        border-radius: 8px;
+        
+        background: url(../assets/west.jpg);       
+        background: linear-gradient(15deg, transparent,#adf22b ,#26242b);
+
+}
+.card2{    
+
+    margin: 20;
+        width: 270px;
+        height: 60vh;
+        background: #1c1c1c;
+        border-radius: 8px;
+        background: linear-gradient(-15deg, transparent,transparent ,#26242b);
+        
+        background: linear-gradient(15deg, transparent,#adf22b ,#26242b);
+        
+    }
+.card1{
+    opacity: 0.7;
+    margin: 20;
+    width: 170px;
+    height: 32vh;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    background: linear-gradient(15deg, transparent,#adf22b ,#26242b);
+
+}
+
+
+    h2{
+       text-align: center;
+    }
+    .resume  img{
+        padding-top: -30px;
+        float: right;
+        border-radius: 50px;
+        
+    }
+    .resume .p .details{
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-content: center;
+    border: 10px dotted white;
+    }
+
+.details{
+    justify-content: center;
+    text-align: center;
+}
+    .details ul li{    
+        display:inline-block;  
+        padding: 3;
+           
+    }
+    .dettails li a{
+        color: aliceblue;
+ 
+    }
+
+.activities a{
+    text-decoration: none;
+    color: aliceblue;
+}
+</style>
+
+<div class="page">
+<div class="body">
+<div class="resume">
+<div class="mycards">
+    <div class="cardwrap">
+    <div class="card">
+    <div class="card1"></div></div>
+    <div class="card">
+    <div class="card2"></div></div>
+    <div class="card">
+    <div class="card3"></div></div>
+</div>
+    </div>
+</div>
+</div>
+
+    
+
+    <!---
+    <h2>  MANKGA TEBOGO JONAS
+    </h2>  
+    <p>
+        249 Smit Street<br>
+        JHC Flats<br>
+        Johannesburg<br>
+        2001
+        <img src="../assets/west.jpg" 
+        alt="my_pictuce" srcset="" 
+        width="110px" height="120px" />
+    <br><br><br><br><br><br>
+
+</p>
+<div class="details">
+    <ul>
+        <li>9910235433084</li>
+        <li>0763999262</li>
+        <li>jonaslekgau@gmail.com</li>
+    </ul>
+<ul >
+    <li><a href="mailto:jonaslekgau@gmail.com" type="email"></a>www.linkedin.com/in/joas-lekgau-W1327</li>
+    <li><a href="https://codewithwest.github.io" type="email"></a>codewithwest.github.io</li>
+</ul>
+</div>
+
+<div class="bio">
+    <p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </p>
+</div>
+
+
+<div class="education">
+    <h3>EDUCATION EXPERIENCE</h3>
+    <ul>
+        <h4>MATRIC 2017</h4>
+        <ul>
+        <li>Millennium Combiled School</li>
+        <li>Sepedi, English, Life Scriences, Physical Sciences, Geography, Mathematics</li>
+    </ul>
+        <h4>CERTIFICATIONS</h4>
+    <ul>
+        <li>Applied MachineLearning in Python</li>
+        <li>Introduction to Packet Tracer</li>
+        <li>Introductionto IoT</li>
+        <li>Huawei Basic AI Technology Training</li>
+        <li>Huawei 5G Fundamwental Training</li>
+        <li>NDG Linux Essensials</li>
+        <li>PCAP  Programming Essentials in Python</li>
+        <li>Introduction to Cyber Security</li>
+        <li>Building Training Websites with Google Sites</li>
+    </ul>
+    </ul>
+
+</div>
+<h4>SKILLS</h4>
+<ul>
+    <li>Git and GitHub</li>
+    <li>C</li>
+    <li>Flutter with Dart</li>
+    <li>Python(Django, Flask)</li>
+    <li>HTML, CSS, JavaScript</li>
+    <li>Java</li>
+    <li>Reack and React-Native</li>
+    <li>C++</li>
+    <li>Computer Technician</li>
+</ul>
+<div class="activities">
+<h4>ACTIVITIES</h4>
+<ul>
+    <li>GitHub Contributions</li>
+    <li>Side projects available on the Github link: <a href="https://github.com/codewithwest">My_Repositories</a></li>
+    <li>Website under Development: <a href="https://codewithwest.github.io">West Dynamics</a></li>
+    <li>Track Athle and Junior Coach</li>
+    <li>Computer Technicia (Software and Hardware)</li>
+</ul>
+</div>
+<br>
+      </p>
+    -->
