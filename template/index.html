@@ -2,37 +2,83 @@
 <style>
 
 .cover{
-	opacity: 0.7;
+	display: flex;
+	padding: 10px 0;
 	text-align: center;
-	text-justify: distribute;
 	width: 100%;
-	height: 100vh;
-	border-radius: 5px;
-	background: linear-gradient(25deg, transparent,transparent, #000);
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	background-image: linear-gradient(rgba(0,0,0,0.3), transparent),url(../assets/background.png);
-	background-size: cover;
-	background-position: center;
-	color: aliceblue;
+	height: 100%;
+	color: inherit;
 	position: relative;
-	
-	text-indent: 2%;
 	text-overflow: ellipsis;
 }
-	.intro{
-			padding: 4px;
-	}
+.intro{
+	padding: 4px;
+}
+.box{
+	
+	height: 100%;
+	
+}
+.box .box-child{
+	border: 2px solid red;
+	display: flex;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.box .box-child #box-children{
+
+	position: relative;
+	display: inline;
+	width: 50%;
+	margin: auto auto;
+	
+}
+img{
+	height: 100%;
+	width: 100%;
+}
+
 </style>
 
 
 <div class="cover">
-<h1>Welcome To West Dynamics</h1>
+	<div class="box">
+		<div class="box-child">
+			<div class="image" id="box-children">
+				<img src="../assets/background.png" alt="founder-image" >
+			</div>
+			<div class="text" id="box-children">
+				hello
+			</div>
 
-<p class="intro">
-	This is a company for the by people an NGO looking to reach all personel in need all around the world,
-	 to bring about hope through advancement in medicine and advancement in technology, the cutting edge research 
-	 to be done in the faclity is one that will change the world for the better and fighting through the world issues 
-	 combating them for a better tomorrow.<br>
+			
+</div>
+			<div class="box-child">
+				<div class="image" id="box-children">
+					<img src="../assets/background.png" alt="founder-image" >
+				</div>
+				<div class="text" id="box-children">
+					hello
+				</div>
+			
 
-</p>
+		
+	</div>
+	<div class="box-child">
+		<div class="image" id="box-children">
+			<img src="../assets/background.png" alt="founder-image" >
+		</div>
+		<div class="text" id="box-children">
+			hello
+		</div>
+	
+
+
+</div>
+
+
+
+
 </div>
