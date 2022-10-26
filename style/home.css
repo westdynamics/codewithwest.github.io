@@ -13,9 +13,26 @@
     color: var(--fontColor);
    
   }
+<<<<<<< HEAD
 .top-banner{
   height: 100%;
   width: 100%;
+=======
+ .nav-bars ul {
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    font-weight: 30px;
+    flex: 1;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(25deg, transparent, #28292d,#28292d), 
+    linear-gradient(-25deg, transparent, #28292d,#28292d);
+    opacity: 0.5;
+  }
+>>>>>>> 643fdef40bdd62dfb00ae2fafa36ee2ff3e54eb9
   
   background: url(../assets/top-banner.png);
   background-size: cover;
@@ -97,6 +114,10 @@ font-size: 100%;
     width: 50px;
     border: none;
     color: var(--btnFontColor);
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 643fdef40bdd62dfb00ae2fafa36ee2ff3e54eb9
     background-color: var(--btnBg);
    
   }
