@@ -2,11 +2,12 @@
 <style>
 
 .cover{
-	display: flex;
+	
 	padding: 10px 0;
+	border: 2px solid black;
 	text-align: center;
-	width: 100%;
-	height: 100%;
+	width: 99.4%;
+	display: flex;
 	color: inherit;
 	position: relative;
 	text-overflow: ellipsis;
@@ -14,53 +15,102 @@
 .intro{
 	padding: 4px;
 }
+
 .box{
-	
+	width: 100%;
 	height: 100%;
+	display: inline; 
 	
 }
 .box .box-child{
-	border: 2px solid red;
-	display: flex;
-	position: relative;
-	height: 100%;
-	width: 100%;
-	text-align: center;
+	border-bottom: 1px solid green;
+    display: inline-flex;
+    position: relative;
+    padding: 10px 10px;
+    width: 98%;
+   
+	
 }
 .box .box-child #box-children{
-
 	position: relative;
-	display: inline;
 	width: 50%;
 	margin: auto auto;
 	
 }
+/* 2nd Box child*/
+#box-child-2{
+	height: 99%;
+	background: linear-gradient(
+		2deg, transparent,transparent, rgba(130,130, 140, 0.9)),
+		linear-gradient(
+			120deg, transparent,transparent, rgba(130,130, 140, 0.9))
+		;
+}
+
+
+.button .button-cover{
+	margin: 25% 20%;
+	box-shadow: 1px 1px 7px rgba(130,130, 140, 0.9) inset;
+	width: 70%;
+	height: 80%;
+	padding: 7%;
+	transition: all 1s;
+	text-anchor: middle;	
+}
+.button .button-cover:hover{
+	font-size: x-large;
+	transition: all 1s;
+	margin-left: 21.5%;
+	box-shadow: -1px -1px 3px rgba(20,3, 2, 0.9) inset;
+	
+
+}
+
+.button .button-cover a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
 img{
-	height: 100%;
-	width: 100%;
+	height: 50%;
+	width: 50%;
 }
 
 </style>
 
 
 <div class="cover">
+	
 	<div class="box">
+		<div class="welcome">
+			<h2>Welcome To The</h2>
+			<h2>Wide Electrical  Scientific and Technological Dynamics Research</h2>
+		</div>
 		<div class="box-child">
 			<div class="image" id="box-children">
 				<img src="../assets/background.png" alt="founder-image" >
 			</div>
 			<div class="text" id="box-children">
-				hello
+				This is a company that delivers the best quality services
+				from world class softwares to advanced tech.
+				Meet our founder 
+
 			</div>
 
 			
 </div>
-			<div class="box-child">
-				<div class="image" id="box-children">
-					<img src="../assets/background.png" alt="founder-image" >
+			<div class="box-child " id="box-child-2" >
+				<div class="button" id="box-children">
+					<div class="button-cover">
+						<a href="#">Read More.</a>
+
+					</div>
 				</div>
 				<div class="text" id="box-children">
-					hello
+					Click on the link to read more about our company's vision and 
+					mission.
 				</div>
 			
 
@@ -73,10 +123,15 @@ img{
 		<div class="text" id="box-children">
 			hello
 		</div>
-	
-
-
+		
 </div>
+<div class="box-child">
+	<div class="image" id="box-children">
+		<img src="../assets/background.png" alt="founder-image" >
+	</div>
+	<div class="text" id="box-children">
+		hello
+	</div>
 
 
 

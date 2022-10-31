@@ -1,28 +1,33 @@
 *{
   margin: 0;
   padding: 0;
+ 
 }
 :root {
   --green: #FFFFFF;
   --white: #ffffff;
   --black: #28292d;
+  --normal-font-size: 150%;
 
 }
   body {
+    font-size: var(--normal-font-size);
     background: var(--bg);
     color: var(--fontColor);
+    width: 100%;
    
   }
 
 
 .top-banner{
   height: 100%;
-  width: 100%;
+ 
 }
 .banner{
+  
  background: url('../assets/top-banner.png');   
- background-position: center;
- background-repeat: no-repeat;
+
+ 
  text-align: center;
  font-weight: 900;
  color: #fff;
@@ -49,23 +54,25 @@
 }
 
 .nav-bars{
-font-size: 100%;
+color: var(--white);
   width: 100%;
   z-index: 5;
   display: flex;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0px 10px 20px rgba(1,0,0,0.1), 0 6px 6px rgba(0,0,0,0.23);
   background: linear-gradient(25deg, transparent, #28292d,#28292d), 
   linear-gradient(-25deg, transparent, #28292d,#28292d);; 
 }
 
 .nav-bars ul{
+  
   width: auto;
   display: inline-block;
   list-style: none;
   width: 100%;
-  margin: 1.8%;
+  margin: 1%;
   text-align: center;
- 
+
+  
 }
 
 .nav-bars ul li{
@@ -74,13 +81,15 @@ font-size: 100%;
   text-decoration: none; 
   width: calc(95%/4);
   padding: 2px;
+  
 }
   .nav-bars ul li a {
-    margin: 20px auto;
-    color: white;
+    margin: auto auto;
+    color: var(--white);
     text-align: center;
     text-decoration: none;
     position: relative;
+    
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -111,7 +120,8 @@ font-size: 100%;
 
   .btn {
     height: 45px;
-    width: 50px;
+    width: 56px;
+    font-size: x-large;
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
@@ -152,9 +162,14 @@ font-size: 100%;
   }
 
   
- 
+#content{
+  width: 100%;
+  
+  border-top: 1px solid #000;
+}
 
 #footer {
+ 
   padding: 10px;
   border-top: 1px solid #f1f1f1;
 }
@@ -169,7 +184,8 @@ font-size: 100%;
 }
 
 .copyright {
-  font-size: 8pt;
+
+  font-size: 80%;
   text-align: right;
   padding-top: 1px;
   color: grey;
