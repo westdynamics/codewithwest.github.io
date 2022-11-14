@@ -2,19 +2,16 @@
 <style>
 
 .cover{
-	
 	padding: 10px 0;
 	border: 2px solid black;
 	text-align: center;
-	width: 99.4%;
+	max-width: 100%;
 	display: flex;
 	color: inherit;
 	position: relative;
 	text-overflow: ellipsis;
 }
-.intro{
-	padding: 4px;
-}
+
 
 .box{
 	width: 100%;
@@ -25,9 +22,8 @@
 .box .box-child{
 	border-bottom: 1px solid green;
     display: inline-flex;
-    position: relative;
-    padding: 10px 10px;
-    width: 98%;
+    width: 100%;
+	height: 100%;
    
 	
 }
@@ -39,7 +35,7 @@
 }
 /* 2nd Box child*/
 #box-child-2{
-	height: 99%;
+	
 	background: linear-gradient(
 		2deg, transparent,transparent, rgba(130,130, 140, 0.9)),
 		linear-gradient(
@@ -49,21 +45,19 @@
 
 
 .button .button-cover{
-	margin: 25% 20%;
+	margin: 20% auto;
 	box-shadow: 1px 1px 7px rgba(130,130, 140, 0.9) inset;
 	width: 70%;
-	height: 80%;
-	padding: 7%;
+	height: 40%;
+	padding: 6%;
 	transition: all 1s;
 	text-anchor: middle;	
 }
 .button .button-cover:hover{
 	font-size: x-large;
 	transition: all 1s;
-	margin-left: 21.5%;
+	margin-right: 0.3%;
 	box-shadow: -1px -1px 3px rgba(20,3, 2, 0.9) inset;
-	
-
 }
 
 .button .button-cover a{
@@ -71,6 +65,15 @@
 	font-weight: bold;
 }
 
+ .text p{
+	margin: 10%;
+}
+
+.welcome{
+	font-family:'Mono Space',  sans-serif;
+	font-weight:bolder;
+	margin: 3% 3%;
+}
 
 
 img{
@@ -93,10 +96,11 @@ img{
 				<img src="../assets/background.png" alt="founder-image" >
 			</div>
 			<div class="text" id="box-children">
+				<p>
 				This is a company that delivers the best quality services
 				from world class softwares to advanced tech.
 				Meet our founder 
-
+			</p>
 			</div>
 
 			
@@ -109,8 +113,10 @@ img{
 					</div>
 				</div>
 				<div class="text" id="box-children">
+					<p>
 					Click on the link to read more about our company's vision and 
 					mission.
+				</p>
 				</div>
 			
 
