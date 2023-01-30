@@ -54,7 +54,7 @@ const urlRoute = (event) => {
     urlLocationHandler();
 
 }
-const urlLocationHandler = async ()=> {
+const urlLocationHandler = async () => {
     const location = window.location.pathname;
     if (location.length == 0){
         location = "/";
